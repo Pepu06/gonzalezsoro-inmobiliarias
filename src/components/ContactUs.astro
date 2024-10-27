@@ -1,0 +1,75 @@
+<section class="bg-contact-color-bg text-white flex justify-center flex-col">
+  <h2 class="flex justify-center p-10 text-3xl">
+    Ponete en contacto con nosotros
+  </h2>
+  <form class="flex justify-center">
+    <div class="flex w-1/2 flex-col gap-y-5 px-10">
+      <div class="flex flex-row justify-between gap-x-10">
+        <div class="flex flex-col w-full">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="bg-transparent p-2 border-b-[2px] border-slate-400 focus:outline-none focus:border-white transition-colors w-full"
+          />
+        </div>
+        <div class="flex flex-col w-full">
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            class="bg-transparent p-2 border-b-[2px] border-slate-400 focus:outline-none focus:border-white transition-colors w-full"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="apellido">Apellido</label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          class="bg-transparent p-2 border-b-[2px] border-slate-400 focus:outline-none focus:border-white transition-colors w-full"
+        />
+      </div>
+      <div class="flex items-center gap-x-4">
+        <span>Me interesa: </span>
+        <div class="flex items-center gap-x-2">
+          <input
+            type="radio"
+            name="interes"
+            id="compra"
+            value="compra"
+            class="hover:cursor-pointer appearance-none rounded-full border-[1px] border-white w-4 h-4 checked:bg-white checked:border-transparent"
+          />
+          <label for="compra">Compra</label>
+        </div>
+        <div class="flex items-center gap-x-2">
+          <input
+            type="radio"
+            name="interes"
+            id="alquiler"
+            value="alquiler"
+            class="hover:cursor-pointer appearance-none rounded-full border-[1px] border-white w-4 h-4 checked:bg-white checked:border-transparent"
+          />
+          <label for="alquiler">Alquiler</label>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          class="bg-transparent p-2 border-b-[2px] border-slate-400 focus:outline-none focus:border-white transition-colors w-full"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-white text-black p-2 rounded-md hover:opacity-80 transition-opacity my-5"
+        >
+          Enviar
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

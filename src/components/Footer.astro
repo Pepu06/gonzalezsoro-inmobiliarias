@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import Instagram from "./icons/Instagram.astro";
+import Mail from "./icons/Mail.astro";
+import Mapa from "./icons/Mapa.astro";
+import Telefono from "./icons/Telefono.astro";
+import Whatsapp from "./icons/Whatsapp.astro";
+import logo from "../components/img/logo_gonzalezsoro.jpg";
+---
+
+<footer class="bg-footer-color-bg text-white">
+  <div class="flex flex-row justify-evenly p-10">
+    <div class="flex flex-col w-1/3 gap-5 items-center">
+      <h3 class="flex justify-center text-3xl">Contacto</h3>
+      <div class="gap-5 flex flex-col">
+        <a href="" class="align-baseline flex gap-2 items-center">
+          <Whatsapp class="h-6 w-6" />
+          <span class="hover:underline">+541143732700</span>
+        </a>
+        <a href="" class="align-baseline flex gap-2 items-center">
+          <Telefono class="h-6 w-6" />
+          <span class="hover:underline">+541143732700</span>
+        </a>
+        <a href="" class="align-baseline flex gap-2 items-center">
+          <Mail class="h-6 w-6" />
+          <span class="hover:underline">alquileresdgs@gmail.com</span>
+        </a>
+        <a href="" class="align-baseline flex gap-2 items-center">
+          <Instagram class="h-6 w-6" />
+          <span class="hover:underline">gonzalezsoro</span>
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/3 gap-5 items-center">
+      <h3 class="flex justify-center text-3xl">Ubicacion</h3>
+      <div class="flex flex-row justify-center items-center">
+        <Mapa class="h-40 w-40" />
+        <span>Gral Juan Lavalle Nº 1718</span>
+      </div>
+      <span> Tribunales, Capital Federal </span>
+    </div>
+    <div class="flex flex-col w-1/3 gap-5 items-center">
+      <h3 class="flex justify-center text-3xl">Horarios</h3>
+      <span>Lunes a Viernes</span>
+      <span>10:00 a 18:00</span>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center items-center p-10 gap-5">
+    <Image
+      src={logo}
+      alt="Gonzalez Soro Inmobiliarias"
+      class="h-20 w-20 ml-5 rounded-full"
+    />
+    <h5>Software inmobiliario - Adinco CRM | Argenprop</h5>
+  </div>
+</footer>
