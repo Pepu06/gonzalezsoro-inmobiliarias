@@ -1,0 +1,92 @@
+---
+import { Image } from "astro:assets";
+import Instagram from "./icons/Instagram.astro";
+import Mail from "./icons/Mail.astro";
+import Telefono from "./icons/Telefono.astro";
+import Whatsapp from "./icons/Whatsapp.astro";
+import logo from "../components/img/logo_gonzalezsoro.jpg";
+---
+
+<header class="flex bg-header-color-bg text-white items-center justify-between">
+  <div class="flex flex-row justify-center items-center">
+    <div class="flex justify-center ml-5 items-center">
+      <Image
+        src={logo}
+        alt="Gonzalez Soro Inmobiliarias"
+        class="h-10 w-10 rounded-full"
+      />
+    </div>
+    <div class="flex p-5">
+      <h1 class="text-3xl font-bold">
+        Gonzalez Soro <span class="text-sm font-light">inmobiliarias</span>
+      </h1>
+    </div>
+    <div class="flex gap-x-2 items-baseline">
+      <a href="" class="hover:scale-110 align-baseline">
+        <Whatsapp class="h-6 w-6" />
+      </a>
+      <a href="" class="hover:scale-110 align-baseline">
+        <Telefono class="h-6 w-6" />
+      </a>
+      <a href="" class="hover:scale-110 align-baseline">
+        <Mail class="h-6 w-6" />
+      </a>
+      <a href="" class="hover:scale-110 align-baseline">
+        <Instagram class="h-6 w-6" />
+      </a>
+    </div>
+  </div>
+  <div class="flex justify-end items-baseline">
+    <nav class="flex flex-row justify-center gap-x-5">
+      <a
+        href=""
+        class="hover:text-header-color-text transition-all active:text-header-color-text align-baseline"
+      >
+        Inicio
+      </a>
+      <div class="relative group">
+        <a
+          href=""
+          class="hover:text-header-color-text transition-all active:text-header-color-text align-baseline"
+        >
+          Propiedades
+        </a>
+        <div
+          class="absolute hidden group-hover:block group-focus-within:block bg-white text-black mt-1 rounded-lg shadow-lg"
+        >
+          <a
+            href=""
+            class="block px-4 py-2 rounded-t-lg hover:text-header-color-text"
+          >
+            Compra
+          </a>
+          <a
+            href=""
+            class="block px-4 py-2 rounded-b-lg hover:text-header-color-text"
+          >
+            Alquiler
+          </a>
+        </div>
+      </div>
+      <a
+        href=""
+        class="hover:text-header-color-text transition-all active:text-header-color-text align-baseline"
+      >
+        Tasaciones
+      </a>
+      <a
+        href=""
+        class="hover:text-header-color-text transition-all active:text-header-color-text align-baseline"
+      >
+        Contacto
+      </a>
+    </nav>
+    <div class="px-5">
+      <input
+        type="text"
+        placeholder="Buscar"
+        class="bg-white text-black p-2 rounded-lg"
+      />
+    </div>
+  </div>
+</header>
